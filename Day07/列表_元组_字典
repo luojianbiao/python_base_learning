@@ -1,0 +1,25 @@
+"""这三种数据存储模式的特点"""
+#列表
+（1）初始化：list = [1,'2',....]
+ (2) 特点：有序、可重复、能读写、具有可变性
+（3）常用方法：
+    append()#添加的在末尾
+    list.insert(index,value)#index表示添加的位置，value表示添加的值
+    del list[index]#index表示下标，可以删除index位置的元素
+    list.remove(value)#删除列表中具体值
+    list.pop(index)#删除index位置的元素
+    list[index] = value #表示修改index位置的值，新值为value
+ (4)遍历
+    #遍历值
+    for value in list:
+      print(value)#只是遍历值
+    for index in range(len(list)):
+      print(list[index])#通过获取列表的长度从而遍历下标获取值
+    for index,value in enumerate(list):
+      print(index,value)#获取下标和值
+    for index,value in enumerate(list,item):
+      print(index,value)#item表示遍历的起始位置，然后从指定位置开始遍历
+      
+    
+    
+    
