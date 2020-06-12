@@ -1,0 +1,17 @@
+"""python中类、方法、实例化"""
+class Person():
+#初始化函数__init__()必须有，且必须这样写
+#参数self必须有，其他的可以没有
+#类实例化时，会自动执行init()
+  def __init__(self,name,age):
+    self.name = name
+    self.age = age
+#定义方法
+#参数self必须有
+def say(self):
+  print(self.name
+#实例化
+person = Person(46,'四哥')
+#注意
+Python处理实例化person = Person(46,'四哥'),把工厂函数调用转换为Athlete().__init__(person,46.'四哥')
+也就是说,python自动将实例赋值self参数，如果没有这个赋值Python解释器无法得出方法调用要应用到哪个对象实例
